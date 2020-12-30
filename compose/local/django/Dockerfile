@@ -10,7 +10,10 @@ RUN apk update \
   && apk add --no-cache postgresql-dev \
   # Translations dependencies
   && apk add --no-cache gettext \
-  && apk add --no-cache libffi-dev 
+  && apk add --no-cache libffi-dev \
+  # Build pillow
+  && apk add --no-cache jpeg-dev \
+  && apk add --no-cache zlib-dev
 
 # Requirements are installed here to ensure they will be cached.
 COPY ./requirements /requirements
