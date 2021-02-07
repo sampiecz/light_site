@@ -43,3 +43,9 @@ class BulbController():
     def turn_red(self):
         self.bulb_on()
         self.turn_color(1,100,100)
+
+    def dim(self, brightness=50):
+        self.update_bulbs()
+        self.bulb_on()
+        asyncio.run(self.bulb1.set_brightness(brightness))
+        asyncio.run(self.bulb2.set_brightness(brightness))

@@ -40,14 +40,18 @@ def blue(request):
 
 def color(request):
     rgb = hex_to_rgb(request.POST['color'])
-    print("\n", "HEX {}".format(request.POST['color']))
-    print("\n", "RGB {}".format(rgb))
     hsv = rgb_to_hsv(rgb[0], rgb[1], rgb[2])
-    print("\n", "HSV {}".format(hsv))
-    print("{} {} {}".format(math.floor((hsv[0]*100)*3.5),math.floor(((hsv[1]*100)/255)*100),math.floor(((hsv[2]*100)/255))))
     try:
         bc = BulbController("One","Two")
         bc.turn_color(hue=math.floor(hsv[0]),saturation=math.floor(hsv[1]),value=math.floor(hsv[2]))
+        return render(request, 'bulbs/index.html', {'message': 'Success', 'color': 'green'})
+    except Exception as e:
+        return render(request, 'bulbs/index.html', {'message': 'Bulbs not responding', 'color': 'red'})
+
+def dimmer(request):
+    try:
+        bc = BulbController("One","Two")
+        bc.dim(math.floor(int(request.POST['dimmer'])))
         return render(request, 'bulbs/index.html', {'message': 'Success', 'color': 'green'})
     except Exception as e:
         return render(request, 'bulbs/index.html', {'message': 'Bulbs not responding', 'color': 'red'})
