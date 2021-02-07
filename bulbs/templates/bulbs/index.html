@@ -1,1 +1,21 @@
 <h1>Bulbs Yo</h1>
+<style>
+* {
+  background: black;
+  color: white;
+}
+</style>
+<ul>
+  <li>
+    <a href="{% url 'off' %}">Off</a>
+  </li>
+  <li>
+    <a href="{% url 'on' %}">On</a>
+  </li>
+  <li>
+    <a href="{% url 'blue' %}">Blue</a>
+  </li>
+  <li>
+    <a href="{% url 'red' %}">Red</a>
+  </li>
+</ul>
