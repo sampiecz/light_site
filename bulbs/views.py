@@ -40,13 +40,14 @@ def blue(request):
 
 def color(request):
     rgb = hex_to_rgb(request.POST['color'])
-    print("\n\n\n", "HSB {}".format(request.POST['color']), "\n\n\n")
+    print("\n", "HEX {}".format(request.POST['color']))
+    print("\n", "RGB {}".format(rgb))
     hsv = rgb_to_hsv(rgb[0], rgb[1], rgb[2])
-    print("\n\n\n", "{}".format(hsv), "\n\n\n")
-    print("{} {} {}".format(math.ceil((hsv[0]*100)*3.5),math.ceil(((hsv[1]*100)/255)*100),math.ceil(((hsv[2]*100)/255))))
+    print("\n", "HSV {}".format(hsv))
+    print("{} {} {}".format(math.floor((hsv[0]*100)*3.5),math.floor(((hsv[1]*100)/255)*100),math.floor(((hsv[2]*100)/255))))
     try:
         bc = BulbController("One","Two")
-        bc.turn_color(hue=math.ceil((hsv[0]*100)*3.5),saturation=math.ceil(((hsv[1]*100)/255)*100),value=math.ceil(((hsv[2]*100)/255)))
+        bc.turn_color(hue=math.floor(hsv[0]),saturation=math.floor(hsv[1]),value=math.floor(hsv[2]))
         return render(request, 'bulbs/index.html', {'message': 'Success', 'color': 'green'})
     except Exception as e:
         return render(request, 'bulbs/index.html', {'message': 'Bulbs not responding', 'color': 'red'})
@@ -57,24 +58,24 @@ def hex_to_rgb(hex_val):
     return tuple(int(h[i:i+2], 16) for i in (0, 2, 4))
 
 def rgb_to_hsv(r, g, b):
-    r = float(r)
-    g = float(g)
-    b = float(b)
-    high = max(r, g, b)
-    low = min(r, g, b)
-    h, s, v = high, high, high
+    R_dash = r / 255
+    G_dash = g / 255
+    B_dash = b / 255
+    Cmax = max(R_dash, G_dash, B_dash)
+    Cmin = min(R_dash, G_dash, B_dash)
+    delta = Cmax - Cmin
+    if (delta == 0):
+        H = 0
+    elif (Cmax == R_dash):
+        H = (60 * (((G_dash  - B_dash) / delta) % 6))
+    elif (Cmax == G_dash):
+        H = (60 * (((B_dash  - R_dash) / delta) + 2))
+    elif (Cmax == B_dash):
+        H = (60 * (((R_dash  - G_dash) / delta) + 4))
 
-    d = high - low
-    s = 0 if high == 0 else d/high
-
-    if high == low:
-        h = 0.0
+    if (Cmax == 0):
+        S = 0
     else:
-        h = {
-            r: (g - b) / d + (6 if g < b else 0),
-            g: (b - r) / d + 2,
-            b: (r - g) / d + 4,
-        }[high]
-        h /= 6
-
-    return h, s, v
+        S = delta / Cmax
+    V = Cmax
+    return (H, S*100, V*100)
