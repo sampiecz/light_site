@@ -1,9 +1,23 @@
-<h1>Bulbs Yo</h1>
+<a href="{% url 'controls' %}">
+  <h1>Bulbs</h1>
+</a>
+{% if message %}
+  <h2 class="message">{{ message }}</h2>
+{% endif %}
 <style>
 * {
   background: black;
   color: white;
 }
+{% if color %}
+  .message {
+    color: {{ color }};
+  }
+{% else %}
+  .message {
+    color: "red";
+  }
+{% endif %}
 </style>
 <ul>
   <li>
@@ -17,5 +31,18 @@
   </li>
   <li>
     <a href="{% url 'red' %}">Red</a>
+  </li>
+  <li>
+    <form action="{% url 'color' %}" method="post">
+			{% csrf_token %}
+      <ul>
+        <li>
+          <input type="color" name="color"/>
+        </li>
+        <li>
+          <button type="submit">Change Color</button>
+        </li>
+      </ul>
+    </form>
   </li>
 </ul>

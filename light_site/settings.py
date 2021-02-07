@@ -25,7 +25,7 @@ SECRET_KEY = 'flpjjo8!a9abvh^msxsz&=-e#1t96#1u)l6hdmx_5rg%t7vlzk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["192.168.8.237","127.0.0.1","localhost"]
+ALLOWED_HOSTS = ["192.168.8.237","127.0.0.1","localhost","toxic.local"]
 
 
 # Application definition

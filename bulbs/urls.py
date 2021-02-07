@@ -8,4 +8,5 @@ urlpatterns = [
     path("on", views.on, name="on"),
     path("red", views.red, name="red"),
     path("blue", views.blue, name="blue"),
+    path("color", views.color, name="color"),
 ]
