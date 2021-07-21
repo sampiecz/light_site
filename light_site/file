@@ -1,0 +1,522 @@
+    1  cp .zshrc.pi ../.zshrc
+    2  cp .tmux.conf.pi ../.tmux.conf
+    3  vim ../.tmux.conf
+    4  cd ~
+    5  source ~/.zshrc
+    6  vim ~/.zshrc
+    7  source ~/.zshrc
+    8  clear
+    9  cp terminal-preferences/.vimrc.mac .vimrc
+   10  clear
+   11  tmux attach
+   12  CLEAR
+   13  clear
+   14  vim ~/.zshrc
+   15  clear
+   16  tmux attach
+   17  clear
+   18  vim
+   19  tmux
+   20  vim 
+   21  tmux attach
+   22  clear
+   23  ls
+   24  cd projects
+   25  clear
+   26  CLEAR
+   27  clear
+   28  ls
+   29  source z-cam/bin/activate
+   30  cd ZorroCam
+   31  python3 manage.py runserver 0.0.0.0:8000
+   32  clear
+   33  x
+   34  tmux
+   35  ls
+   36  cd projects
+   37  ls
+   38  cd PCA9685
+   39  ls
+   40  vim makefile
+   41  make
+   42  make clean
+   43  vim makefile
+   44  make clean
+   45  clear
+   46  make clean
+   47  ls
+   48  make
+   49  ls
+   50  ls /usr/local/tup
+   51  ls /usr/local
+   52  ls /usr/local/bin/
+   53  ls /usr/local/sbin
+   54  ls /usr/local/lib/
+   55  mkdir /usr/local/lib/tup
+   56  sudo mkdir /usr/local/lib/tup
+   57  ls
+   58  cp RunServoDemo.so /usr/local/lib/tup/.
+   59  sudo cp RunServoDemo.so /usr/local/lib/tup/.
+   60  vim ~/.zshrc
+   61  cd ../
+   62  cd ZorroCam
+   63  ls
+   64  git pull
+   65  git status
+   66  rm -rf ZorroCam/__pycache__
+   67  rm -rf cam/migrations/__pycache__
+   68  git status
+   69  git -rf ZorroCam/__pycache__
+   70  git status
+   71  rm -rf ZorroCam/__pycache__
+   72  git tatus
+   73  git status
+   74  rm -rf ZorroCam/__pycache__/
+   75  git status
+   76  git add -A
+   77  git commit -m "Checking in."
+   78  git config --global user.email "samuel.piecz@gmail.com\n"
+   79  git config --global user.email "samuel.piecz@gmail.com"
+   80  git config --global user.name "sampiecz"
+   81  git status
+   82  git add -
+   83  git add -A
+   84  git commit -m "Checking in."
+   85  git pull
+   86  lear
+   87  clear
+   88  git pull
+   89  git status
+   90  git add -A
+   91  git commit -m 'Checking in.'
+   92  git pull
+   93  git status
+   94  vim
+   95  claer
+   96  cd /etc/ld.so.conf.d
+   97  ls
+   98  cp libc.conf libtup.conf
+   99  sudo cp libc.conf libtup.conf
+  100  vim libtup.conf
+  101  sudo vim libtup.conf
+  102  clear
+  103  ldconfig -p | grep libdispl
+  104  clear
+  105  sudo vim libtup.conf
+  106  ldconfig
+  107  sudo ldconfig
+  108  clear
+  109  ls
+  110  cd ..
+  111  ls
+  112  source z-cam/bin/activate
+  113  git status
+  114  clear
+  115  ls
+  116  cd ZorroCam
+  117  ls
+  118  python3 manage.py shell
+  119  vim 
+  120  clear
+  121  hotp
+  122  clear
+  123  htop
+  124  cd projects/ZorroCam
+  125  source ../z-cam/bin/activate
+  126  clear
+  127  python3 manage.py shell
+  128  clear
+  129  python3 manage.py shell
+  130  claer
+  131  exit
+  132  cp /usr/local/lib/tup/RunServoDemo.so /usr/local/lib/tup/RunServoDemo.so.bak
+  133  sudo cp /usr/local/lib/tup/RunServoDemo.so /usr/local/lib/tup/RunServoDemo.so.bak
+  134  ls
+  135  cd ../PCA9685
+  136  ls
+  137  ls ..
+  138  ls
+  139  cd ZorroCam
+  140  s
+  141  ls
+  142  vim makefile
+  143  vim RunServoDemo.c
+  144  vim src/RunServoDemo.c
+  145  mv ../PCA9685/src/RunServoDemo.c .
+  146  ls
+  147  vim src/RunServoDemo.c
+  148  cd ../
+  149  ls
+  150  cd ZorroCam
+  151  ls
+  152  cd PCA9685
+  153  ls
+  154  vim src/RunServoDemo.c
+  155  vim makefile
+  156  make
+  157  ls
+  158  sudo mv RunServoDemo.so /usr/local/lib/tup/.
+  159  ls /usr/local/lib/tup
+  160  cd ../
+  161  ls
+  162  cd ../
+  163  rm -rf PCA9685
+  164  ls
+  165  cd ZorroCam
+  166  ls
+  167  python3 manage.py shell
+  168  cd ~/projects/ZorroCam
+  169  source ../z-cam/bin/activate
+  170  clear
+  171  python3 manage.py runserver 0.0.0.0:8000
+  172  clear
+  173  ls
+  174  python3 manage.py createapp servo
+  175  python3 manage.py startapp servo
+  176  git status
+  177  clear
+  178  vim
+  179  clear
+  180  python3 manage.py runserver 0.0.0.0:8000
+  181  ls
+  182  touch webpack.config.js
+  183  sudo apt install npm
+  184  vim webpack.config.js
+  185  clear
+  186  vim package.json
+  187  npm install
+  188  cd projects/ZorroCam
+  189  ls
+  190  touch .babelrc
+  191  vim .babelrc
+  192  clear
+  193  exit
+  194  python3 manage.py runserver 0.0.0.0:8000
+  195  vim package.json
+  196  vim .babelrc
+  197  vim webpack.config.js
+  198  clear
+  199  pip3 install django-webpack-loader
+  200  ls
+  201  cd cam
+  202  ls
+  203  cd static
+  204  ls
+  205  mkdir js
+  206  cd ../../
+  207  cd ../
+  208  ls
+  209  cd ZorroCam
+  210  ls
+  211  clear
+  212  rm js
+  213  rm -rf js
+  214  clear
+  215  touch cam/templates/cam/base.html
+  216  mv cam/templates/cam/base.html ../.
+  217  mv ../base.html cam/templates/.
+  218  touch cam/static/js/cam.js
+  219  clear
+  220  ls cam/static/js/
+  221  mkdir cam/static/js/cam
+  222  mv cam/static/js/cam.js cam/static/js/cam/.
+  223  touch cam/static/js/cam/navigation.js
+  224  touch cam/static/js/cam/videoStream.js
+  225  touch cam/static/js/cam/controls.js
+  226  npm run watch
+  227  npm install && npm run watch
+  228  npm install --save-dev webpack
+  229  python3 manage.py runserver 0.0.0.0:8000
+  230  npm run watch
+  231  touch webpack.dev.js
+  232  touch webpack.prod.js
+  233  mv webpack.dev.js webpack.config.dev.js
+  234  mv webpack.prod.js webpack.config.prod.js
+  235  npm run watch
+  236  rm webpack.config.dev.js
+  237  rm webpack.config.prod.js
+  238  clear
+  239  lear
+  240  npm run watch
+  241  cd projects/ZorroCam
+  242  ls
+  243  clear
+  244  ls
+  245  npm install && npm run watch
+  246  clear
+  247  clear
+  248  exit
+  249  ls
+  250  rm webpack-stats.json
+  251  rm package-lock.json
+  252  rm -rf node_modules
+  253  npm install && npm run watch
+  254  clear
+  255  python3 manage.py runserver 0.0.0.0:8000
+  256  grep -inRP assets ./ --exclude-dir={node_modules}
+  257  grep -inRP assets ./ --exclude-dir={node_modules,}
+  258  cd projects/ZorroCam
+  259  grep -inRP assets ./ --exclude-dir={node_modules,}
+  260  grep -inRP assets ./ --exclude-dir={node_modules}
+  261  clear
+  262  claer
+  263  vim
+  264  exit
+  265  ls
+  266  cd ZorroCam/cam/
+  267  cd cam/templates
+  268  ls
+  269  mv base.html cam/.
+  270  clear
+  271  ls
+  272  mv cam/base.html .
+  273  ls
+  274  clear
+  275  vim
+  276  cd ../../
+  277  ls
+  278  clear
+  279  vim
+  280  clear
+  281  npm run watch
+  282  python3 manage.py runserver 0.0.0.0:8000
+  283  npm run build
+  284  npm install --save-dev webpack-bundle-tracker
+  285  ls
+  286  clear
+  287  tmux attach
+  288  clear
+  289  ls
+  290  ls dist
+  291  rm -rf dist
+  292  clear
+  293  ls
+  294  vim webpack-stats.json
+  295  ls cam/static
+  296  ls cam/static/js
+  297  ls cam/static/js/bundles
+  298  ls cam/static/js/cam
+  299  mv cam/static .
+  300  ls
+  301  vim ZorroCam/settings.py
+  302  python3
+  303  clear
+  304  tmux attach
+  305  python3 manage.py runserver 0.0.0.0:8000
+  306  cd /projects
+  307  ls
+  308  cd projects
+  309  ls
+  310  cd ZorroCam
+  311  ls
+  312  clear
+  313  npm run watch
+  314  laer
+  315  clear
+  316  npm run watch
+  317  npm install --save-dev react webpack webpack-bundle-tracker babel babel-loader
+  318  npm run watch
+  319  python3 manage.py migrate
+  320  ls
+  321  rm webpack-stats.json
+  322  npm install --save-dev webpack-dev-server react-hot-loader\n
+  323  npm run watch
+  324  python3 manage.py migrate
+  325  python3 manage.py runserver 0.0.0.0:8000
+  326  npm run build
+  327  npm install babel-loader image-webpack-loader csv-loader svg-inline-loader
+  328  ls
+  329  rm webpack-stats.json
+  330  rm -rf static/js/bundles
+  331  npm install && npm run watch
+  332  clear
+  333  python3 manage.py runserver 0.0.0.0:8000
+  334  cd projects
+  335  cd ZorroCam
+  336  ls
+  337  mv cam/templates .
+  338  ls
+  339  ls templates
+  340  clear
+  341  python3 manage.py runserver 0.0.0.0:8000
+  342  clear
+  343  tmux attach
+  344  exit
+  345  source ../z-cam/bin/activate
+  346  cd projects
+  347  cd ZorroCam
+  348  source ../z-cam/bin/activate
+  349  clear
+  350  ls
+  351  clear
+  352  ls
+  353  pip3 install webpack_loader
+  354  pip3 install django-webpack-loader
+  355  clear
+  356  ls
+  357  rm -rf cam/static
+  358  clear
+  359  python3 manage.py runserver 0.0.0.0:8000 --debug
+  360  python3 manage.py runserver 0.0.0.0:8000 -v
+  361  python3 manage.py runserver 0.0.0.0:8000 -vvv
+  362  python3 manage.py runserver 0.0.0.0:8000 --vvv
+  363  python3 manage.py runserver 0.0.0.0:8000 --verbose
+  364  python3 manage.py runserver 0.0.0.0:8000 -v=3
+  365  clear
+  366  vim
+  367  pip3 uninstall django-webpack-loader
+  368  pip3 install django-webpack-loader==0.6.0  # https://github.com/owais/django-webpack-loader 
+  369  pip3 install django-webpack-loader==0.6.0
+  370  exit
+  371  python3 manage.py runserver 0.0.0.0:8000
+  372  exit
+  373  clear
+  374  vim
+  375  clear
+  376  python3 manage.py runserver 0.0.0.0:8000
+  377  cd projects
+  378  ls
+  379  cd ZorroCam
+  380  git status
+  381  git add -A
+  382  git commit -m "Servo and video stream are working with react implemented."
+  383  git status
+  384  git push
+  385  clear
+  386  tmux attaach
+  387  tmux attach
+  388  exit
+  389  tmux attach
+  390  history
+  391  history | cat vim
+  392  history | cat < file
+  393  history | cat > file
+  394  vim file
+  395  exit
+  396  ls
+  397  vim file
+  398  git pull
+  399  sudo apt update && sudo apt upgrade
+  400  npm run build
+  401  clear
+  402  exit
+  403  clear
+  404  exit
+  405  tmux attach
+  406  cd projects
+  407  ls
+  408  cd ZorroCam
+  409  vim static
+  410  cd projects
+  411  cd ZorroCam
+  412  npm run build
+  413  tmux attach
+  414  clear
+  415  npm run build
+  416  tmux attach
+  417  python3 manage.py runserver 0.0.0.0:8000
+  418  cd terminal-preferences
+  419  git pull
+  420  cd ../
+  421  cp terminal-preferences/fresh_install.sh.pi fresh_install.sh
+  422  ./fresh_install.sh
+  423  clear
+  424  tmux
+  425  vim .zshrc
+  426  source ~/.zshrc
+  427  vim .zshrc
+  428  clear
+  429  sudo usermod -aG docker pi
+  430  docker info
+  431  ls
+  432  dockerd-rootless-setuptool.sh install
+  433  sudo sh -eux <<EOF\n# thing\n>>
+  434  sudo apt-get install -y uidmap
+  435  dockerd-rootless-setuptool.sh install
+  436  /usr/bin/dockerd-rootless-setuptool.sh uninstall -f ; /usr/bin/rootlesskit rm -rf /home/pi/.local/share/docker
+  437  dockerd-rootless-setuptool.sh install
+  438  sudo usermod -aG docker pi
+  439  /usr/bin/dockerd-rootless-setuptool.sh uninstall -f ; /usr/bin/rootlesskit rm -rf /home/pi/.local/share/docker
+  440  dockerd-rootless-setuptool.sh install
+  441  docker
+  442  sudo apt-get install -y libffi-dev libssl-dev\nsudo apt-get install -y python3 python3-pip\nsudo apt-get remove python-configparser\nsudo pip3 -v install docker-compose
+  443  docker-compose
+  444  clear
+  445  git clone git@github.com:sampiecz/light_site.git
+  446  ls
+  447  cd light_site
+  448  git clone git@github.com:sampiecz/light_site.git && cd light_site && sudo docker build -t light_site .
+  449  rm -rf light_site
+  450  git clone git@github.com:sampiecz/light_site.git && cd light_site && sudo docker build -t light_site .
+  451  ls
+  452  docker ps -a
+  453  sudo docker ps -a
+  454  docker ps -a
+  455  clear
+  456  docker ls
+  457  docker container ls
+  458  clear
+  459  claer
+  460  ls
+  461  docker build -t light_site .
+  462  docker run -p 8000:8000 light_site
+  463  vim light_site/settings.py
+  464  docker build -t light_site . && docker run -p 8000:8000 light_site
+  465  tmux
+  466  docker build -t light_site . && docker run -p 8000:8000 light_site
+  467  docker -it light_site sh
+  468  docker exec -it light_site sh
+  469  docker run -it light_site sh
+  470  docker build -t light_site . && docker run -p 8000:8000 -p 8000:9999 light_site
+  471  docker build -t light_site . && docker run -p 8000:8000 -p 9999:9999 light_site
+  472  docker run -it light_site sh
+  473  docker build -t light_site . && docker run -p 8000:8000 -p 9999:9999 -p 2637:2637 light_site
+  474  docker run -it light_site sh
+  475  tmux attach
+  476  kasa 
+  477  pip3
+  478* tmux attach
+  479  clear
+  480* docker build -t light_site . && docker run -p 8000:8000 -p *:* light_site
+  481* docker build -t light_site . && docker run -p 8000:8000 light_site
+  482* clear
+  483  docker network create -d macvlan -o parent=eno1 \\n  --subnet 192.168.1.0/24 \\n  --gateway 192.168.1.1 \\n  --ip-range 192.168.1.192/27 \\n  mynet
+  484  docker network create -d macvlan -o parent=etho \\n  --subnet 192.168.1.0/24 \\n  --gateway 192.168.1.1 \\n  --ip-range 192.168.1.192/27 \\n  mynet
+  485  docker network create -d macvlan -o parent=eth0 \\n  --subnet 192.168.1.0/24 \\n  --gateway 192.168.1.1 \\n  --ip-range 192.168.1.192/27 \\n  mynet
+  486  docker network create -d macvlan -o parent=eth0 \\n  --subnet 192.168.1.0/24 \\n  --gateway 192.168.1.1 \\n  --ip-range 192.168.1.192/27 \\n  --aux-address 'host=192.168.1.223' \\n  mynet
+  487  ip link add mynet-shim link eth0 type macvlan  mode bridge\n
+  488  sudo ip link add mynet-shim link eth0 type macvlan  mode bridge\n
+  489  sudo ip addr add 192.168.1.223/32 dev mynet-shim
+  490  sudo ip link set mynet-shim up\n
+  491  sudo ip route add 192.168.1.192/27 dev mynet-shim\n
+  492  docker build -t light_site . && docker run -p 8000:8000 light_site
+  493  clear
+  494* exit
+  495  clear
+  496* docker ps -a
+  497* docker kill $(eval docker ps -a)
+  498* docker rm $(eval docker ps -a)
+  499* docker ps -a
+  500* docker network ls
+  501* docker network rm $(eval docker network ls)
+  502* docker network ls
+  503* docker network rm c67 e7f 983
+  504* sudo docker network rm c67 e7f 983
+  505* docker ps -a
+  506* docker network ls
+  507* docker network rm c6
+  508* docker network prune
+  509* docker container prune
+  510* docker network prune
+  511* docker image rm
+  512* docker images rm
+  513* docker images prune
+  514* clear
+  515* docker ps -a
+  516* clear
+  517* sudo ip rout remove 192.168.1.192/27 dev mynet-shim\n
+  518* sudo ip route remove 192.168.1.192/27 dev mynet-shim\n
+  519* ip route help
+  520* ip route list
+  521  history | cat > file && vim
+  522  history

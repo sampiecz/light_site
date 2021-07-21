@@ -1,12 +1,9 @@
-# A site to control your lights
+# Kasa light bulb web interface 
 
-## Running this project
+To allow other people in my home to control our smart lights I created an web frontend that is hosted on a raspberry pi.
 
-### Install requirements
-pip install -r requirements.txt
+If you want to do the same thing feel free to fork this and modify it for your needs. 
 
-### Create initial migrations
-python3 manage.py migrate
+1.) Can turn bulbs on / off
 
-### Start server
-python3 manage.py runserver 0.0.0.0:8000
+2.) Can change bulbs color

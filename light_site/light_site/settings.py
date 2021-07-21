@@ -25,7 +25,7 @@ SECRET_KEY = 'flpjjo8!a9abvh^msxsz&=-e#1t96#1u)l6hdmx_5rg%t7vlzk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["rainbow.local",]
+ALLOWED_HOSTS = ["rainbow.local", "toxic.local", '192.168.8.224']
 
 
 # Application definition

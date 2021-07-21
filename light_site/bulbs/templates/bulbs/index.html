@@ -1,0 +1,57 @@
+<a href="{% url 'controls' %}">
+  <h1>Bulbs</h1>
+</a>
+{% if message %}
+  <h2 class="message">{{ message }}</h2>
+{% endif %}
+<style>
+{% if color %}
+  .message {
+    color: {{ color }};
+  }
+{% else %}
+  .message {
+    color: "red";
+  }
+{% endif %}
+</style>
+<ul>
+  <li>
+    <a href="{% url 'off' %}">Off</a>
+  </li>
+  <li>
+    <a href="{% url 'on' %}">On</a>
+  </li>
+  <li>
+    <a href="{% url 'blue' %}">Blue</a>
+  </li>
+  <li>
+    <a href="{% url 'red' %}">Red</a>
+  </li>
+  <li>
+    <form action="{% url 'color' %}" method="post">
+			{% csrf_token %}
+      <ul>
+        <li>
+          <input type="color" name="color"/>
+        </li>
+        <li>
+          <button type="submit">Change Color</button>
+        </li>
+      </ul>
+    </form>
+  </li>
+  <li>
+    <form action="{% url 'dimmer' %}" method="post">
+      {% csrf_token %}
+      <ul>
+        <li>
+          <input type="range" min="1" max="100" name="dimmer"/>
+        </li>
+        <li>
+          <button type="sumbit">Change Brightness</button>
+        </li>
+      </ul>
+    </form>
+  </li>
+</ul>
